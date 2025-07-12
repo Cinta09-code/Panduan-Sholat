@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tata Cara Sholat Muhammadiyah</title>
+    <link href="../src/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap");
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Playfair Display", serif;
+      }
+      .step-image {
+        max-width: 320px;
+        width: 100%;
+        height: auto;
+        margin: 1.5rem auto;
+        display: block;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+      }
+      .step-audio {
+        width: 100%;
+        margin-top: 1rem;
+      }
+      .step-box {
+        background-color: #ffffff;
+        border: 1px solid #ccfbf1;
+        border-radius: 1.5rem;
+        padding: 2rem;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      }
+      #batal-sholat {
+        direction: ltr;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-green-950 shadow-lg fixed top-0 left-0 right-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            src="image/logo.png"
+            alt="Logo Universitas Muhammadiyah"
+            class="w-28 object-contain"
+          />
+          <h1 class="text-xl font-bold text-white">Universitas Muhammadiyah</h1>
+        </div>
+        <ul class="hidden md:flex space-x-6">
+          <li>
+            <a href="Index.html" class="text-white hover:text-teal-300"
+              >Beranda</a
+            >
+          </li>
+          <li>
+            <a href="panduan.html" class="text-white hover:text-teal-300"
+              >Panduan</a
+            >
+          </li>
+        </ul>
+        <button class="md:hidden text-white" id="menuToggle">
+          <svg
+            class="w-7 h-7"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden px-6 pb-4 md:hidden" id="mobileMenu">
+        <a href="Index.html" class="block text-white py-2">Beranda</a>
+        <a href="panduan.html" class="block text-white py-2">Panduan</a>
+      </div>
+    </nav>
+
+    <!-- Section Niat Sholat -->
+    <section class="pt-36 pb-24 bg-emerald-50" id="niat-sholat">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-gray-800 mb-12"
+          data-aos="fade-down"
+        >
+          Niat <span class="text-teal-600">Sholat 5 Waktu</span>
+        </h2>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Subuh -->
+          <div
+            class="bg-white border border-teal-100 rounded-2xl shadow-md p-6 text-left"
+            data-aos="fade-up"
+          >
+            <h3 class="text-xl font-semibold text-teal-700 mb-3">
+              Sholat Subuh (2 Rakaat)
+            </h3>
+            <p class="text-gray-800 text-lg mb-2 leading-relaxed">
+              نَوَيْتُ أَنْ أُصَلِّيَ فَرْضَ الصُّبْحِ رَكْعَتَيْنِ لِلّٰهِ
+              تَعَالَى
+            </p>
+            <p class="text-sm italic text-gray-600 mb-2">
+              Nawaitu an ushalliya fardash-shubhi rak‘ataini lillaahi ta‘aala
+            </p>
+            <p class="text-sm text-gray-700">
+              Aku berniat sholat fardhu Subuh dua rakaat karena Allah Ta’ala.
+            </p>
+          </div>
+
+          <!-- Dzuhur -->
+          <div
+            class="bg-white border border-teal-100 rounded-2xl shadow-md p-6 text-left"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <h3 class="text-xl font-semibold text-teal-700 mb-3">
+              Sholat Dzuhur (4 Rakaat)
+            </h3>
+            <p class="text-gray-800 text-lg mb-2 leading-relaxed">
+              نَوَيْتُ أَنْ أُصَلِّيَ فَرْضَ الظُّهْرِ أَرْبَعَ رَكَعَاتٍ
+              لِلّٰهِ تَعَالَى
+            </p>
+            <p class="text-sm italic text-gray-600 mb-2">
+              Nawaitu an ushalliya fardhadh-zhuhri arba‘a raka‘aatin lillaahi
+              ta‘aala
+            </p>
+            <p class="text-sm text-gray-700">
+              Aku berniat sholat fardhu Dzuhur empat rakaat karena Allah Ta’ala.
+            </p>
+          </div>
+
+          <!-- Ashar -->
+          <div
+            class="bg-white border border-teal-100 rounded-2xl shadow-md p-6 text-left"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h3 class="text-xl font-semibold text-teal-700 mb-3">
+              Sholat Ashar (4 Rakaat)
+            </h3>
+            <p class="text-gray-800 text-lg mb-2 leading-relaxed">
+              نَوَيْتُ أَنْ أُصَلِّيَ فَرْضَ الْعَصْرِ أَرْبَعَ رَكَعَاتٍ
+              لِلّٰهِ تَعَالَى
+            </p>
+            <p class="text-sm italic text-gray-600 mb-2">
+              Nawaitu an ushalliya fardhal-‘ashri arba‘a raka‘aatin lillaahi
+              ta‘aala
+            </p>
+            <p class="text-sm text-gray-700">
+              Aku berniat sholat fardhu Ashar empat rakaat karena Allah Ta’ala.
+            </p>
+          </div>
+
+          <!-- Maghrib -->
+          <div
+            class="bg-white border border-teal-100 rounded-2xl shadow-md p-6 text-left"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <h3 class="text-xl font-semibold text-teal-700 mb-3">
+              Sholat Maghrib (3 Rakaat)
+            </h3>
+            <p class="text-gray-800 text-lg mb-2 leading-relaxed">
+              نَوَيْتُ أَنْ أُصَلِّيَ فَرْضَ الْمَغْرِبِ ثَلَاثَ رَكَعَاتٍ
+              لِلّٰهِ تَعَالَى
+            </p>
+            <p class="text-sm italic text-gray-600 mb-2">
+              Nawaitu an ushalliya fardhal-maghribi tsalaatsa raka‘aatin
+              lillaahi ta‘aala
+            </p>
+            <p class="text-sm text-gray-700">
+              Aku berniat sholat fardhu Maghrib tiga rakaat karena Allah Ta’ala.
+            </p>
+          </div>
+
+          <!-- Isya -->
+          <div
+            class="bg-white border border-teal-100 rounded-2xl shadow-md p-6 text-left"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <h3 class="text-xl font-semibold text-teal-700 mb-3">
+              Sholat Isya (4 Rakaat)
+            </h3>
+            <p class="text-gray-800 text-lg mb-2 leading-relaxed">
+              نَوَيْتُ أَنْ أُصَلِّيَ فَرْضَ الْعِشَاءِ أَرْبَعَ رَكَعَاتٍ
+              لِلّٰهِ تَعَالَى
+            </p>
+            <p class="text-sm italic text-gray-600 mb-2">
+              Nawaitu an ushalliya fardhal-‘isyaa’i arba‘a raka‘aatin lillaahi
+              ta‘aala
+            </p>
+            <p class="text-sm text-gray-700">
+              Aku berniat sholat fardhu Isya empat rakaat karena Allah Ta’ala.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="tata-cara"
+      class="pt-36 pb-24 bg-gradient-to-b from-white via-slate-50 to-white"
+      data-aos="fade-up"
+    >
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+          Tata Cara <span class="text-teal-600">Sholat Muhammadiyah</span>
+        </h2>
+
+        <div class="space-y-10">
+          <!-- Langkah 1: Niat -->
+          <div class="step-box" data-aos="fade-right">
+            <h3 class="text-2xl font-semibold text-teal-700 mb-3">
+              1. Niat dalam Hati
+            </h3>
+            <p class="text-2xl text-right font-arabic text-gray-900 mb-2">
+              نَوَيْتُ أَنْ أُصَلِّيَ فَرْضَ الصُّبْحِ رَكْعَتَيْنِ لِلّٰهِ
+              تَعَالَى
+            </p>
+            <p class="italic text-teal-600 mb-2">
+              Nawaitu an ushalli fardha-sh shubhi rak‘ataini lillaahi ta‘aala
+            </p>
+            <p class="text-gray-700">
+              Aku niat sholat fardhu Subuh dua rakaat karena Allah Ta‘ala.
+            </p>
+          </div>
+
+          <!-- Langkah 2: Takbiratul Ihram -->
+          <div class="step-box" data-aos="fade-left">
+            <h3 class="text-2xl font-semibold text-teal-700 mb-3">
+              2. Takbiratul Ihram
+            </h3>
+            <img
+              src="image/takbir.png"
+              alt="Takbiratul Ihram"
+              class="step-image rounded-md shadow-md"
+              data-aos="zoom-in"
+            />
+            <audio controls class="mt-4 w-full">
+              <source src="audio/Takbir.mp3" type="audio/mpeg" />
+              Browser Anda tidak mendukung pemutar audio.
+            </audio>
+            <p class="text-gray-700">
+              Menghadap kiblat, berdiri (jika mampu), angkat tangan sejajar
+              bahu/telinga, ucapkan:
+            </p>
+            <p class="text-2xl text-right font-arabic text-gray-900 mb-2">
+              اللّٰهُ أَكْبَرُ
+            </p>
+            <p class="italic text-teal-600 mb-2">Allahu Akbar</p>
+            <p class="text-gray-700">Allah Maha Besar</p>
+          </div>
+
+          <!-- Langkah 3: Doa Iftitah -->
+          <div class="step-box" data-aos="fade-right">
+            <h3 class="text-2xl font-semibold text-teal-700 mb-3">
+              3. Doa Iftitah (Sunnah)
+            </h3>
+            <img
+              src="image/Sholat.png"
+              alt="Takbiratul Ihram"
+              class="step-image rounded-md shadow-md"
+              data-aos="zoom-in"
+            />
+            <audio controls class="mt-4 w-full">
+              <source src="audio/iftitah.mp3" type="audio/mpeg" />
+              Browser Anda tidak mendukung pemutar audio.
+            </audio>
+            <p
+              class="text-2xl text-right font-arabic text-gray-900 leading-loose mb-3"
+            >
+              اللَّهُمَّ بَاعِدْ بَيْنِي وَبَيْنَ خَطَايَايَ كَمَا بَاعَدْتَ
+              بَيْنَ الْمَشْرِقِ وَالْمَغْرِبِ،<br />
+              اللَّهُمَّ نَقِّنِي مِنْ خَطَايَايَ كَمَا يُنَقَّى الثَّوْبُ
+              الْأَبْيَضُ مِنَ الدَّنَس،<br />
+              اللَّهُمَّ اغْسِلْنِي مِنْ خَطَايَايَ بِالثَّلْجِ وَالْمَاءِ
+              وَالْبَرَدِ
+            </p>
+            <p class="italic text-teal-600 mb-2">
+              Allahumma baa‘id baynii wa bayna khathaayaaya kamaa baa‘adta
+              baynal masyriqi wal maghrib.<br />
+              Allahumma naqqinii min khathaayaaya kamaa yunaqqath-thawbul
+              abyadhu minad-danas.<br />
+              Allahumma’ghsilnii min khathaayaaya bits-tsalji wal maa’i wal
+              barad.
+            </p>
+            <p class="text-gray-700">
+              Ya Allah, jauhkanlah antara aku dan kesalahan-kesalahanku
+              sebagaimana Engkau telah menjauhkan antara timur dan barat.<br />
+              Ya Allah, bersihkanlah aku dari kesalahan-kesalahanku sebagaimana
+              kain putih dibersihkan dari kotoran.<br />
+              Ya Allah, cucilah aku dari kesalahan-kesalahanku dengan air,
+              salju, dan embun es.
+            </p>
+          </div>
+
+          <!-- Langkah 4: Al-Fatihah -->
+          <div class="step-box" data-aos="fade-left">
+            <h3 class="text-2xl font-semibold text-teal-700 mb-3">
+              4. Membaca Al-Fatihah
+            </h3>
+            <p
+              class="text-2xl text-right font-arabic text-gray-900 leading-loose mb-3"
+            >
+              بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ<br />
+              الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ<br />
+              الرَّحْمَٰنِ الرَّحِيمِ<br />
+              مَالِكِ يَوْمِ الدِّينِ<br />
+              إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ<br />
+              اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ<br />
+              صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ<br />
+              غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ
+            </p>
+            <p class="italic text-teal-600 mb-2">
+              Bismillāhir-raḥmānir-raḥīm. Al-ḥamdu lillāhi rabbil-‘ālamīn.
+              Ar-raḥmānir-raḥīm.<br />
+              Māliki yaumid-dīn. Iyyāka na‘budu wa iyyāka nasta‘īn.
+              Ihdinaṣ-ṣirāṭal-mustaqīm.<br />
+              Ṣirāṭal-lażīna an‘amta ‘alaihim. Ghairil-maghḍūbi ‘alaihim wa
+              laḍ-ḍāllīn
+            </p>
+            <p class="text-gray-700">
+              Dengan nama Allah Yang Maha Pengasih, Maha Penyayang.<br />
+              Segala puji bagi Allah, Tuhan seluruh alam.<br />
+              Yang Maha Pengasih, Maha Penyayang.<br />
+              Pemilik hari pembalasan.<br />
+              Hanya kepada-Mu kami menyembah dan hanya kepada-Mu kami memohon
+              pertolongan.<br />
+              Tunjukilah kami jalan yang lurus.<br />
+              (Yaitu) jalan orang-orang yang telah Engkau beri nikmat kepada
+              mereka.<br />
+              Bukan (jalan) mereka yang dimurkai dan bukan (pula jalan) mereka
+              yang sesat.
+            </p>
+          </div>
+          <!-- Langkah 5: Membaca Surat Pendek -->
+          <div class="step-box" data-aos="fade-right">
+            <h3 class="text-2xl font-semibold text-teal-700 mb-3">
+              5. Membaca Surat Pendek
+            </h3>
+            <p class="text-gray-700">
+              Setelah Al-Fatihah, baca surat pendek seperti Surah Al-Ikhlas:
+            </p>
+            <p
+              class="text-2xl text-right font-arabic text-gray-900 mb-2 leading-loose"
+            >
+              قُلْ هُوَ اللَّهُ أَحَدٌ<br />
+              اللَّهُ الصَّمَدُ<br />
+              لَمْ يَلِدْ وَلَمْ يُولَدْ<br />
+              وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ
+            </p>
+            <p class="italic text-teal-600 mb-2">
+              Qul huwallāhu aḥad. Allāhuṣ-ṣamad. Lam yalid wa lam yūlad. Wa lam
+              yakun lahū kufuwan aḥad
+            </p>
+            <p class="text-gray-700">
+              Katakanlah: Dialah Allah Yang Maha Esa. Allah tempat bergantung.
+              Tidak beranak dan tidak pula diperanakkan. Dan tidak ada sesuatu
+              pun yang setara dengan-Nya.
+            </p>
+          </div>
+
+          <!-- Langkah 6: Ruku' -->
+          <div class="step-box" data-aos="fade-left">
+            <h3 class="text-2xl font-semibold text-teal-700 mb-3">6. Ruku'</h3>
+            <img
+              src="image/ruku.png"
+              alt="Takbiratul Ihram"
+              class="step-image rounded-md shadow-md"
+              data-aos="zoom-in"
+            />
+            <audio controls class="mt-4 w-full">
+              <source src="audio/ruku.mp3" type="audio/mpeg" />
+              Browser Anda tidak mendukung pemutar audio.
+            </audio>
+            <p class="text-gray-700">
+              Tundukkan badan hingga punggung sejajar, tangan di lutut, sambil
+              membaca:
+            </p>
+            <p class="text-2xl text-right font-arabic text-gray-900 mb-2">
+              سُبْحَانَكَ اللّهم رَبَّنَا وَبِحَمْدِكَ اللّهم اغْفِرْلِيْ
+            </p>
+            <p class="italic text-teal-600 mb-2">
+              Subḥānaka allāhumma rabbanaa wa biḥamdik, allāhumma ighfir lī.
+            </p>
+            <p class="text-gray-700">
+              Maha Suci Engkau, ya Allah Tuhan kami, dan dengan memuji-Mu. Ya
+              Allah, ampunilah aku.
+            </p>
+          </div>
+
+          <!-- Langkah 7: I'tidal -->
+          <div class="step-box" data-aos="fade-right">
+            <h3 class="text-2xl font-semibold text-teal-700 mb-3">
+              7. I'tidal
+            </h3>
+            <img
+              src="image/itidal.png"
+              alt="Takbiratul Ihram"
+              class="step-image rounded-md shadow-md"
+              data-aos="zoom-in"
+            />
+            <audio controls class="mt-4 w-full">
+              <source src="audio/itidal.mp3" type="audio/mpeg" />
+              Browser Anda tidak mendukung pemutar audio.
+            </audio>
+            <p class="text-gray-700">Bangun dari ruku dan ucapkan:</p>
+            <p
+              class="text-2xl text-right font-arabic text-gray-900 leading-loose mb-2"
+            >
+              سَمِعَ اللهُ لِمَنْ حَمِدَهُ<br />
+              رَبَّنَا وَلَكَ الْحَمْدُ<br />
+              حَمْدًا كَثِيرًا طَيِّبًا مُبَارَكًا فِيهِ
+            </p>
+            <p class="italic text-teal-600 mb-2">
+              Sami‘allāhu liman ḥamidah. Rabbana wa laka al-ḥamdu. Ḥamdan
+              kathīran ṭayyiban mubārakan fīh.
+            </p>
+            <p class="text-gray-700">
+              Allah mendengar siapa yang memuji-Nya. Ya Tuhan kami, bagi-Mu
+              segala pujian yang banyak, baik, dan penuh berkah.
+            </p>
+          </div>
+
+          <!-- Langkah 8: Sujud -->
+          <div class="step-box" data-aos="fade-left">
+            <h3 class="text-2xl font-semibold text-teal-700 mb-3">8. Sujud</h3>
+            <img
+              src="image/Sujud.png"
+              alt="Takbiratul Ihram"
+              class="step-image rounded-md shadow-md"
+              data-aos="zoom-in"
+            />
+            <audio controls class="mt-4 w-full">
+              <source src="audio/sujud.mp3" type="audio/mpeg" />
+              Browser Anda tidak mendukung pemutar audio.
+            </audio>
+            <p class="text-gray-700">Turun ke posisi sujud dan ucapkan:</p>
+            <p class="text-2xl text-right font-arabic text-gray-900 mb-2">
+              سُبْحَانَكَ اللهُمَّ رَبَّنَا وَبِحَمْدِكَ اللهُمَّ اغْفِرْلِيْ
+            </p>
+            <p class="italic text-teal-600 mb-2">
+              Subḥānaka allāhumma rabbanaa wa biḥamdik, allāhumma ighfir lī.
+            </p>
+            <p class="text-gray-700">
+              Maha Suci Engkau, ya Allah Tuhan kami, dan dengan memuji-Mu. Ya
+              Allah, ampunilah aku.
+            </p>
+          </div>
+
+          <!-- Langkah 9: Duduk Di Antara Dua Sujud -->
+          <div class="step-box" data-aos="fade-right">
+            <h3 class="text-2xl font-semibold text-teal-700 mb-3">
+              9. Duduk di Antara Dua Sujud
+            </h3>
+            <img
+              src="image/duduk.png"
+              alt="Takbiratul Ihram"
+              class="step-image rounded-md shadow-md"
+              data-aos="zoom-in"
+            />
+            <audio controls class="mt-4 w-full">
+              <source src="audio/duduk.mp3" type="audio/mpeg" />
+              Browser Anda tidak mendukung pemutar audio.
+            </audio>
+            <p class="text-gray-700">
+              Duduk dengan kaki kiri dihamparkan dan kanan ditegakkan. Baca:
+            </p>
+            <p
+              class="text-2xl text-right font-arabic text-gray-900 mb-2 leading-loose"
+            >
+              رَبِّ اغْفِرْ لِيْ وَارْحَمْنِيْ<br />
+              وَاجْبُرْنِيْ وَارْفَعْنِيْ<br />
+              وَارْزُقْنِيْ
+            </p>
+            <p class="italic text-teal-600 mb-2">
+              Rabbighfir lii, warḥamnii, wajburnii, warfa‘nii, warzuqnii
+            </p>
+            <p class="text-gray-700">
+              Ya Allah, ampunilah aku, kasihanilah aku, cukupilah aku, angkat
+              derajatku
+            </p>
+          </div>
+
+          <!-- Langkah 10: Sujud Kedua dan Bangkit -->
+          <div class="step-box" data-aos="fade-left">
+            <h3 class="text-2xl font-semibold text-teal-700 mb-3">
+              10. Sujud Kedua dan Bangkit
+            </h3>
+            <p class="text-gray-700">
+              Lakukan sujud kedua seperti sebelumnya, kemudian bangkit untuk
+              rakaat selanjutnya atau lanjut ke tasyahud jika sudah di rakaat
+              terakhir.
+            </p>
+          </div>
+
+          <!-- Langkah 11: Tasyahhud Awal -->
+          <div class="step-box" data-aos="fade-right">
+            <h3 class="text-2xl font-semibold text-teal-700 mb-3">
+              11. Tasyahhud Awal
+            </h3>
+            <img
+              src="image/iftirasy.png"
+              alt="Takbiratul Ihram"
+              class="step-image rounded-md shadow-md"
+              data-aos="zoom-in"
+            />
+            <audio controls class="mt-4 w-full">
+              <source src="audio/awal.mp3" type="audio/mpeg" />
+              Browser Anda tidak mendukung pemutar audio.
+            </audio>
+            <p class="text-gray-700 mb-2">
+              Setelah sujud kedua pada rakaat kedua, duduk dalam posisi iftirasy
+              dan membaca:
+            </p>
+            <p
+              class="text-2xl text-right font-arabic text-gray-900 leading-loose mb-3"
+            >
+              اَلتَّحِيَّاتُ لِلّٰهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ.<br />
+              اَلسَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ
+              وَبَرَكَاتُهُ.<br />
+              اَلسَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ اللّٰهِ الصَّالِحِيْنَ.<br />
+              أَشْهَدُ اَنْ لاَ إِلَهَ إِلاَّ اللّٰهُ<br />
+              وَأَشْهَدُ اَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُوْلُهُ
+            </p>
+            <p class="italic text-teal-600 mb-2">
+              At-taḥiyyātu lillāhi waṣ-ṣalawātu waṭ-ṭayyibāt.<br />
+              As-salāmu ‘alaika ayyuhan-nabiyyu wa raḥmatullāhi wa barakātuh.<br />
+              As-salāmu ‘alainā wa ‘alā ‘ibādillāhiṣ-ṣāliḥīn.<br />
+              Asyhadu allā ilāha illallāh, wa asyhadu anna Muḥammadan ‘abduhū wa
+              rasūluh.
+            </p>
+            <p class="text-gray-700">
+              Segala kehormatan, keberkahan, rahmat dan kebaikan adalah milik
+              Allah. Keselamatan atasmu, wahai Nabi, beserta rahmat Allah dan
+              keberkahan-Nya. Keselamatan atas kami dan atas hamba-hamba Allah
+              yang saleh. Aku bersaksi bahwa tidak ada Tuhan selain Allah, dan
+              aku bersaksi bahwa Muhammad adalah hamba dan utusan-Nya.
+            </p>
+          </div>
+
+          <!-- Langkah 12: Tasyahhud Akhir & Salam -->
+          <div class="step-box" data-aos="fade-left">
+            <h3 class="text-2xl font-semibold text-teal-700 mb-3">
+              12. Tasyahhud Akhir & Shalawat
+            </h3>
+            <img
+              src="image/akhir.png"
+              alt="Takbiratul Ihram"
+              class="step-image rounded-md shadow-md"
+              data-aos="zoom-in"
+            />
+            <audio controls class="mt-4 w-full">
+              <source src="audio/akhir.mp3" type="audio/mpeg" />
+              Browser Anda tidak mendukung pemutar audio.
+            </audio>
+            <p class="text-gray-700 mb-2">
+              Setelah sujud terakhir pada rakaat terakhir, duduk dalam posisi
+              tawarruk, lalu membaca:
+            </p>
+            <p
+              class="text-2xl text-right font-arabic text-gray-900 leading-loose mb-3"
+            >
+              اَلتَّحِيَّاتُ لِلّهِ وَالصَّلَوَاتُ وَالطَّيِّباَتُ. اَلسَّلاَمُ
+              عَلَيْكَ أَيُّهاَ النَّبِيُّوَرَحْمَةُ اللهِ وَبَرَكاَتُهُ.
+              اَلسَّلاَمُ عَلَيْناَ وَعَلَى عِباَدِاللهِ الصَّالِحِيْنَأَشْهَدُ
+              اَنْ لاَاِلَهَ اِلاَّ اللهِ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ
+              وَرَسُوْلُهُ
+              <br />
+              للَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ ، وَعَلَى آلِ مُحَمَّدٍ ، كَمَا
+              صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ ، إِنَّكَ
+              حَمِيدٌ مَجِيدٌ ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ ، وَعَلَى آلِ
+              مُحَمَّدٍ ، كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ ، وَعَلَى آلِ
+              إِبْرَاهِيمَ ، إِنَّكَ حَمِيدٌ مَجِيدٌ
+              <br />
+              اَللَّهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ وَمِنْ
+              عَذَابِ الْقَبْرِ وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ وَمِنْ
+              شَرِّفِتْنَةِ الْمَسِيْحِ الدَّجَّالِ
+            </p>
+            <p class="italic text-teal-600 mb-2">
+              Attahiyyaatu lillaahi washsholawaatu waththoyyibaat. Assalaamu
+              ‘alaika ayyuhannabiyyu warohmatullaahi wabarokaatuh.
+              Assalaamu’alainaa wa’alam‘ibaadillaahi shshoolihiin. Asyhadu anlaa
+              ilaaha illallaah waasyhadu annamuhammadan ‘abduhu warosuuluh<br />
+              Allahumma sholli ‘ala Muhammad wa ‘ala aali Muhammad kamaa
+              shollaita ‘ala Ibroohim wa ‘ala aali Ibrohim, innaka hamidun
+              majiid. Allahumma baarik ‘ala Muhammad wa ‘ala aali Muhammad kamaa
+              baarokta ‘ala Ibrohim wa ‘ala aali Ibrohimm innaka hamidun
+              majid<br />
+              Allaahumma inni a’uudzubika min ‘adzaabil qabri wa min
+              ‘adzaabinnaari jahannama wa min fitnatil mahyaa wal mamaati wa min
+              fitnatil masiihid dajjaal.<br />
+            </p>
+            <p class="text-gray-700 mb-4">
+              Ya Allah, berilah shalawat atas Nabi Muhammad dan keluarga Nabi
+              Muhammad sebagaimana Engkau telah memberi shalawat atas Nabi
+              Ibrahim dan keluarga Nabi Ibrahim. Berilah keberkahan atas Nabi
+              Muhammad dan keluarga Nabi Muhammad sebagaimana Engkau telah
+              memberi keberkahan atas Nabi Ibrahim dan keluarga Nabi Ibrahim.
+              Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia.
+            </p>
+            <p class="text-gray-700 font-semibold">
+              Kemudian tutup sholat dengan salam ke kanan dan kiri:
+            </p>
+            <p class="text-2xl text-right font-arabic text-gray-900">
+              السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللّٰهِ
+            </p>
+            <p class="italic text-teal-600">
+              As-salāmu ‘alaikum wa raḥmatullāh
+            </p>
+            <p class="text-gray-700">
+              Semoga keselamatan dan rahmat Allah tercurah kepadamu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="batal-sholat"
+      class="py-16 bg-gradient-to-b from-white to-teal-50"
+    >
+      <div
+        class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 border border-teal-200 bg-white rounded-2xl shadow-lg p-4 sm:p-6 transition-all duration-300"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <h2
+          class="text-2xl sm:text-3xl font-bold text-center text-teal-800 mb-10"
+          data-aos="zoom-in"
+        >
+          Hal-Hal yang Membatalkan Sholat Menurut Muhammadiyah
+        </h2>
+
+        <div class="space-y-6">
+          <!-- Item 1 -->
+          <div
+            class="border border-teal-200 bg-white rounded-2xl shadow-lg p-4 sm:p-6 transition-all duration-300"
+            data-aos="fade-up"
+          >
+            <button
+              class="w-full flex items-center justify-between text-left"
+              onclick="toggleBatal(this)"
+            >
+              <div class="flex items-center gap-3">
+                <span
+                  class="material-symbols-outlined text-teal-600 text-xl sm:text-2xl"
+                  >cancel</span
+                >
+                <span class="text-base sm:text-lg font-semibold text-teal-800"
+                  >Berbicara di Luar Bacaan Sholat</span
+                >
+              </div>
+              <span
+                class="material-symbols-outlined transition-transform duration-300 rotate-icon"
+                >expand_more</span
+              >
+            </button>
+            <div
+              class="batal-content hidden mt-3 text-gray-700 text-sm sm:text-base text-left"
+            >
+              Mengucapkan kalimat selain bacaan sholat seperti ngobrol atau
+              tertawa membatalkan sholat.
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div
+            class="border border-teal-200 bg-white rounded-2xl shadow-lg p-4 sm:p-6 transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <button
+              class="w-full flex items-center justify-between text-left"
+              onclick="toggleBatal(this)"
+            >
+              <div class="flex items-center gap-3">
+                <span
+                  class="material-symbols-outlined text-teal-600 text-xl sm:text-2xl"
+                  >directions_run</span
+                >
+                <span class="text-base sm:text-lg font-semibold text-teal-800"
+                  >Bergerak Banyak Tanpa Kebutuhan</span
+                >
+              </div>
+              <span
+                class="material-symbols-outlined transition-transform duration-300 rotate-icon"
+                >expand_more</span
+              >
+            </button>
+            <div
+              class="batal-content hidden mt-3 text-gray-700 text-sm sm:text-base text-left"
+            >
+              Bergerak lebih dari tiga kali berturut-turut tanpa keperluan
+              membatalkan sholat.
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div
+            class="border border-teal-200 bg-white rounded-2xl shadow-lg p-4 sm:p-6 transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <button
+              class="w-full flex items-center justify-between text-left"
+              onclick="toggleBatal(this)"
+            >
+              <div class="flex items-center gap-3">
+                <span
+                  class="material-symbols-outlined text-teal-600 text-xl sm:text-2xl"
+                  >visibility_off</span
+                >
+                <span class="text-base sm:text-lg font-semibold text-teal-800"
+                  >Terbuka Aurat dengan Sengaja</span
+                >
+              </div>
+              <span
+                class="material-symbols-outlined transition-transform duration-300 rotate-icon"
+                >expand_more</span
+              >
+            </button>
+            <div
+              class="batal-content hidden mt-3 text-gray-700 text-sm sm:text-base text-left"
+            >
+              Jika aurat terbuka saat sholat dan tidak segera ditutup, maka
+              sholat menjadi batal.
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div
+            class="border border-teal-200 bg-white rounded-2xl shadow-lg p-4 sm:p-6 transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <button
+              class="w-full flex items-center justify-between text-left"
+              onclick="toggleBatal(this)"
+            >
+              <div class="flex items-center gap-3">
+                <span
+                  class="material-symbols-outlined text-teal-600 text-xl sm:text-2xl"
+                  >highlight_off</span
+                >
+                <span class="text-base sm:text-lg font-semibold text-teal-800"
+                  >Niat yang Tidak Lurus Karena Allah</span
+                >
+              </div>
+              <span
+                class="material-symbols-outlined transition-transform duration-300 rotate-icon"
+                >expand_more</span
+              >
+            </button>
+            <div
+              class="batal-content hidden mt-3 text-gray-700 text-sm sm:text-base text-left"
+            >
+              Sholat tidak sah jika niat bukan karena Allah, misalnya karena
+              pamer (riya').
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="bg-gradient-to-br from-green-900 to-green-950 text-white shadow-inner rounded-t-3xl"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10"
+      >
+        <!-- Info Universitas -->
+        <div class="text-center sm:text-left">
+          <h4 class="text-2xl font-bold mb-3 text-teal-300">
+            Universitas Muhammadiyah Pontianak
+          </h4>
+          <p class="text-sm text-gray-300 leading-relaxed">
+            Panduan ibadah ini disusun berdasarkan tuntunan resmi
+            Muhammadiyah.<br />
+            Disajikan secara interaktif, ringkas, dan mudah dipahami.
+          </p>
+        </div>
+
+        <!-- Nama Kelompok -->
+        <div class="text-center">
+          <h4 class="text-xl font-semibold mb-3 text-yellow-300">
+            Nama Kelompok
+          </h4>
+          <ul class="space-y-1 text-sm text-gray-200">
+            <li>Shinta Aulia Pasha</li>
+            <li>Hafiz Saklinov</li>
+          </ul>
+        </div>
+
+        <!-- Dosen Pengampu -->
+        <div class="text-center">
+          <h4 class="text-xl font-semibold mb-3 text-yellow-300">
+            Dosen Pengampu
+          </h4>
+          <p class="text-sm text-gray-200">Dedy Susanto, S.Pd.I.,M.M.</p>
+          <p class="text-sm text-gray-400">
+            Tugas UAS Al-Islam dan Kemuhammadiyahan
+          </p>
+        </div>
+
+        <!-- Kontak dan Media -->
+        <div class="text-center sm:text-right">
+          <h4 class="text-xl font-semibold mb-3 text-teal-300">Kontak</h4>
+          <div class="flex justify-center sm:justify-end space-x-4">
+            <a href="#" class="text-gray-400 hover:text-teal-300 transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2a10 10 0 0 0-3.516 19.436c.555.102.76-.24.76-.533 0-.262-.01-1.131-.015-2.051-3.094.672-3.744-1.492-3.744-1.492-.505-1.287-1.234-1.63-1.234-1.63-.99-.676.075-.662.075-.662 1.096.077 1.672 1.127 1.672 1.127.972 1.668 2.55 1.186 3.17.907.097-.704.38-1.186.69-1.459-2.47-.28-5.068-1.233-5.068-5.49 0-1.212.434-2.202 1.145-2.978-.115-.282-.497-1.421.11-2.964 0 0 .934-.3 3.06 1.138a10.646 10.646 0 0 1 2.79-.375c.948.005 1.905.128 2.79.375 2.126-1.438 3.058-1.138 3.058-1.138.608 1.543.226 2.682.11 2.964.714.776 1.142 1.766 1.142 2.978 0 4.27-2.603 5.207-5.084 5.48.39.338.738 1.01.738 2.038 0 1.472-.014 2.66-.014 3.022 0 .296.202.64.768.531A10 10 0 0 0 12 2z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-teal-300 transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M20.948 7.65a8.179 8.179 0 0 1-2.357.646 4.123 4.123 0 0 0 1.804-2.27 8.202 8.202 0 0 1-2.605.996A4.107 4.107 0 0 0 12 9.46a11.65 11.65 0 0 1-8.457-4.29 4.107 4.107 0 0 0 1.27 5.478 4.075 4.075 0 0 1-1.86-.514v.05a4.108 4.108 0 0 0 3.293 4.022 4.1 4.1 0 0 1-1.853.07 4.108 4.108 0 0 0 3.834 2.85A8.233 8.233 0 0 1 2 18.407a11.616 11.616 0 0 0 6.29 1.843c7.547 0 11.675-6.252 11.675-11.675 0-.178-.004-.355-.012-.531A8.345 8.345 0 0 0 24 5.557a8.189 8.189 0 0 1-2.352.643 4.118 4.118 0 0 0 1.803-2.27z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-teal-300 transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M19 3H5c-1.1 0-2 .9-2 2v14a2 2 0 0 0 2 2h6v-7H8v-3h3V9c0-2.21 1.343-3.42 3.298-3.42.936 0 1.883.173 1.883.173v2.127h-1.06c-1.045 0-1.373.646-1.373 1.307v1.513H17l-.5 3h-2.05V21h4.55a2 2 0 0 0 2-2V5c0-1.1-.9-2-2-2z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div
+        class="border-t border-green-800 text-center text-sm py-4 bg-green-900 text-gray-400"
+      >
+        &copy; 2025 Universitas Muhammadiyah Pontianak — Teknik Informatika —
+        Kelompok Shinta & Hafiz.
+      </div>
+    </footer>
+
+    <!-- AOS & Toggle JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 500,
+        once: true,
+      });
+      // Navbar mobile toggle
+      const toggleBtn = document.getElementById("menuToggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+      toggleBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+      function toggleBatal(button) {
+        const card = button.closest("div");
+        const content = card.querySelector(".batal-content");
+        const icon = button.querySelector(".rotate-icon");
+
+        content.classList.toggle("hidden");
+        icon.classList.toggle("rotate-180");
+      }
+    </script>
+  </body>
+</html>
